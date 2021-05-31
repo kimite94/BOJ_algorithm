@@ -11,7 +11,7 @@ for i in range(n):
         if arr[i] > arr[j]:
             a_list[i] = max(a_list[i], a_list[j]+1)
 
-for i in range(n-1,-1,-1):
+for i in range(n-1,-1,-1):          # 감소하는 수열
     for j in range(n-1,i,-1):
         if arr[i] > arr[j]:
             b_list[i] = max(b_list[i], b_list[j]+1)
